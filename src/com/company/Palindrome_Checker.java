@@ -24,17 +24,17 @@ public class Palindrome_Checker {
     }
     public static void main(String[] args) {
         Palindrome_Checker demo = new Palindrome_Checker();
-        List<String> transactions= new ArrayList<>();
-        transactions.add("college");
-        transactions.add("madam");
-        transactions.add("malayalam");
-        transactions.add("india");
-        transactions.add("stats");
-        transactions.add("epam");
-        transactions.add("task");
+        List<String> list_of_strings= new ArrayList<>();
+        list_of_strings.add("college");
+        list_of_strings.add("madam");
+        list_of_strings.add("malayalam");
+        list_of_strings.add("india");
+        list_of_strings.add("stats");
+        list_of_strings.add("epam");
+        list_of_strings.add("task");
         List<String> res;
 
-        res = demo.check_if_palindromes(PalindromeChecker::isPalindrome,transactions);
+        res = demo.check_if_palindromes(PalindromeChecker::isPalindrome,list_of_strings);
         System.out.println(res);
     }
 }
